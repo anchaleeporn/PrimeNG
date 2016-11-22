@@ -9,6 +9,8 @@ import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 import { DatatableComponent} from './datatable/datatable.component';
 
+import {CarService} from './services/car.service';
+
 
 @NgModule({
   declarations: [
@@ -25,7 +27,7 @@ import { DatatableComponent} from './datatable/datatable.component';
     SharedModule,
     ButtonModule
   ],
-  providers: [],
+  providers: [CarService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

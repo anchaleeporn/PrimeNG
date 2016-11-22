@@ -14,7 +14,10 @@ export class DatatableComponent implements OnInit {
   constructor(private carService: CarService) { }
 
   ngOnInit() {
-    this.carService.getCarsSmall().then(lists => this.lists = lists);
+    this.carService.getCarsSmall().then(lists => {
+      console.log(lists);
+      this.lists = lists;
+    });
   }
 
 }

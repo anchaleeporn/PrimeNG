@@ -5,13 +5,19 @@ import 'rxjs/Rx';
     
 @Injectable()
 export class CarService {
+
+    private username:string;
     
     constructor(private http: Http) {}
 
     getCarsSmall() {
-        return this.http.get('/showcase/resources/data/cars-small.json')
+        return this.http.get('/cars-small.json')
                     .toPromise()
                     .then(res => <List[]> res.json().data)
                     .then(data => { return data; });
+    }
+
+    updateUser(username:string){
+        this.username = username;
     }
 }
