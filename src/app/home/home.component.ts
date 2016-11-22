@@ -12,6 +12,10 @@ export class HomeComponent implements OnInit {
     constructor() { }
 
     ngOnInit() {
+<<<<<<< HEAD
         
+=======
+    
+>>>>>>> 57717a47d60455658068fe856d4d63c26d17d12f
     }
 }
