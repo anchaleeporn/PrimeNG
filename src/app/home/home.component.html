@@ -1,9 +1,16 @@
-<h1>Search User</h1>
-    <div class="form-group">
-        <h3 class="first">ชื่อ</h3>
-        <input id="in" type="text" size="30" pInputText [(ngModel)]="text" />
+<div class="row">
+    <div class="col-md-12">
+            <h1>Search User</h1>
+            <div class="form-group">
+                ชื่อ :
+                <input type="text" size="30" placeholder="ชื่อ" pInputText [(ngModel)]="name" />
+            </div>
+            <br>
+            <div class="form-group">
+                นามสกุล :
+                <input type="text" size="30" placeholder="นามสกุล" pInputText [(ngModel)]="sname" />
+                <button pButton type="text" (click)="onclick()" label="Search"></button>
+            </div>
+
     </div>
-    <div class="form-group">
-        <h3 class="first">นามสกุล</h3>
-        <input id="in" type="text" size="30" pInputText [(ngModel)]="text" />
-    </div>
+</div>
