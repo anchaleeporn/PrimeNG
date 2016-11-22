@@ -1,4 +1,7 @@
+
 <div class="container">
+    <div class="col-md-12">
+        <h1>Search User</h1>
       <div class="form-group">
         <div class="col-md-1">
             <label>ชื่อ</label>
@@ -12,4 +15,8 @@
         <input type="text" size="30" placeholder="นามสกุล" pInputText [(ngModel)]="sname" />
         <button pButton type="text" (click)="onclick()" label="Search"></button>
       </div>
+    </div>
 </div>
+<hr>
+<app-datatable></app-datatable>
+
