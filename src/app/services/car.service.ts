@@ -9,7 +9,7 @@ export class CarService {
     constructor(private http: Http) {}
 
     getCarsSmall() {
-        return this.http.get('/showcase/resources/data/cars-small.json')
+        return this.http.get('/cars-small.json')
                     .toPromise()
                     .then(res => <List[]> res.json().data)
                     .then(data => { return data; });
