@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
 import {Http, Response} from '@angular/http';
-import {Car} from '../../Car';
+import {List} from '../../List';
 import 'rxjs/Rx';
     
 @Injectable()
@@ -11,7 +11,7 @@ export class CarService {
     getCarsSmall() {
         return this.http.get('/showcase/resources/data/cars-small.json')
                     .toPromise()
-                    .then(res => <Car[]> res.json().data)
+                    .then(res => <List[]> res.json().data)
                     .then(data => { return data; });
     }
 }
