@@ -1,0 +1,108 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "primeng@^1.0.0-beta.20",
+        "scope": null,
+        "escapedName": "primeng",
+        "name": "primeng",
+        "rawSpec": "^1.0.0-beta.20",
+        "spec": ">=1.0.0-beta.20 <2.0.0",
+        "type": "range"
+      },
+      "D:\\Angular2\\PrimeNG"
+    ]
+  ],
+  "_from": "primeng@>=1.0.0-beta.20 <2.0.0",
+  "_id": "primeng@1.0.0-rc.6",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/primeng",
+  "_nodeVersion": "5.4.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/primeng-1.0.0-rc.6.tgz_1479727908084_0.9140250540804118"
+  },
+  "_npmUser": {
+    "name": "cagatay.civici",
+    "email": "cagatay.civici@gmail.com"
+  },
+  "_npmVersion": "3.3.12",
+  "_phantomChildren": {
+    "@angular/tsc-wrapped": "0.3.0",
+    "minimist": "1.2.0",
+    "reflect-metadata": "0.1.8"
+  },
+  "_requested": {
+    "raw": "primeng@^1.0.0-beta.20",
+    "scope": null,
+    "escapedName": "primeng",
+    "name": "primeng",
+    "rawSpec": "^1.0.0-beta.20",
+    "spec": ">=1.0.0-beta.20 <2.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "#DEV:/"
+  ],
+  "_resolved": "https://registry.npmjs.org/primeng/-/primeng-1.0.0-rc.6.tgz",
+  "_shasum": "014b69486dfa6b509c3205b9ed5d1c004b342ed3",
+  "_shrinkwrap": null,
+  "_spec": "primeng@^1.0.0-beta.20",
+  "_where": "D:\\Angular2\\PrimeNG",
+  "bugs": {
+    "url": "https://github.com/primefaces/primeng/issues"
+  },
+  "dependencies": {
+    "@angular/compiler-cli": "^2.2.1",
+    "@angular/platform-server": "^2.2.1"
+  },
+  "description": "UI Components for AngularJS 2",
+  "devDependencies": {
+    "@types/node": "^6.0.45",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-flatten": "^0.2.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-uglifycss": "^1.0.6",
+    "ts-loader": "^0.9.5",
+    "typescript": "^2.0.3",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.16.2",
+    "webpack-merge": "^0.14.0"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "014b69486dfa6b509c3205b9ed5d1c004b342ed3",
+    "tarball": "https://registry.npmjs.org/primeng/-/primeng-1.0.0-rc.6.tgz"
+  },
+  "gitHead": "7444c8f6d715fd523477a9ae70be8bc21cd55480",
+  "homepage": "https://github.com/primefaces/primeng#readme",
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "cagatay.civici",
+      "email": "cagatay.civici@gmail.com"
+    }
+  ],
+  "name": "primeng",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primefaces/primeng.git"
+  },
+  "scripts": {
+    "build-dev": "webpack --config config/webpack.dev.js",
+    "build-prod": "webpack --config config/webpack.prod.js",
+    "start": "npm run webpack-dev-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "webpack": "webpack",
+    "webpack-dev-server": "webpack-dev-server --inline",
+    "webpack:w": "webpack -w"
+  },
+  "version": "1.0.0-rc.6"
+}
