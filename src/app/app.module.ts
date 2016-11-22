@@ -9,7 +9,6 @@ import {AutoCompleteModule} from 'primeng/primeng';
 import {DataTableModule,SharedModule} from 'primeng/primeng';
 
 import { HomeComponent } from './home/home.component';
-import { DatatableComponent } from './home/home.component';
 import { AppComponent } from './app.component';
 
 

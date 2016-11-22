@@ -8,11 +8,10 @@ import { Car } from '../../Car';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  cars: Car[];
 
-    constructor(private carService: CarService) { }
+    constructor() { }
 
     ngOnInit() {
-        this.carService.getCarsSmall().then(cars => this.cars = cars);
+    
     }
 }
