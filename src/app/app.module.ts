@@ -8,12 +8,14 @@ import {InputTextModule, DataTableModule, SharedModule} from 'primeng/primeng';
 
 import { HomeComponent } from './home/home.component';
 import { AppComponent } from './app.component';
+import { DatatableComponent} from './datatable/datatable.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    DatatableComponent
   ],
   imports: [
     BrowserModule,

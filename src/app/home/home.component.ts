@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import {Datatable} from '../datatable/datatable.component';
 
 @Component({
   selector: 'home',
