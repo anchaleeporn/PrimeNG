@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {CarService} from '../services/car.service';
+import {List} from '../../List';
 
 @Component({
   selector: 'app-datatable',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatatableComponent implements OnInit {
 
-  constructor() { }
+  lists: List[];
+
+  constructor(private carService: CarService) { }
 
   ngOnInit() {
+    this.carService.getCarsSmall().then(lists => this.lists = lists);
   }
 
 }
