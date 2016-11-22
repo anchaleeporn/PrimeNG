@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { CarService } from '../services/car.service';
-import { Car } from '../../Car';
+//import {Datatable} from '../datatable/datatable.component';
 
 @Component({
   selector: 'home',
@@ -12,6 +11,5 @@ export class HomeComponent implements OnInit {
     constructor() { }
     onclick() {}
     ngOnInit() {
-    
     }
 }
