@@ -1,0 +1,23 @@
+<h1>Search User</h1>
+    <div class="form-group">
+        <h3 class="first">ชื่อ</h3>
+        <input id="in" type="text" size="30" pInputText [(ngModel)]="text" />
+    </div>
+    <div class="form-group">
+        <h3 class="first">นามสกุล</h3>
+        <input id="in" type="text" size="30" pInputText [(ngModel)]="text" />
+    </div>
+    <div class="form-group">
+        <h3>Multiple</h3>
+        <p-autoComplete [(ngModel)]="countries" [suggestions]="filteredCountriesMultiple" (completeMethod)="filterCountryMultiple($event)" styleClass="wid100"
+            [minLength]="1" placeholder="Countries" field="name" [multiple]="true">
+        </p-autoComplete>
+        <ul>
+            <li *ngFor="let c of countries">{{c.name}}</li>
+        </ul>
+    </div>
+    <h3>Dynamic Columns</h3>
+    <p-dataTable [value]="cars">
+        <p-column *ngFor="let col of cols" [field]="col.field" [header]="col.header"></p-column>
+    </p-dataTable>
+
